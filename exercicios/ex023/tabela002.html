@@ -7,19 +7,52 @@
     <title>Tabelas</title>
     <style>
         body{
+            background-color: #a8a8a8;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
+        h1{
+            text-shadow: 0px 2px 5px rgb(113, 113, 113); 
+            text-align: center;
+        }
         table{
+            box-shadow: 2px 1px 10px 2px rgba(0, 0, 0, 0.419);
+            margin: auto;
             border-collapse: collapse;
             width: 500px;
+            position: relative;
+        }
+        caption{
+            background-color: lightgray;
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
         }
         td, th{
             padding: 10px;
             border: 1px solid black;
         }
         thead, tfoot{
-            background-color: gray;
+            background-color: #2a2a2a;
             color: white;
+        }
+        .num{
+            text-align: right;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #2a2a2a;
+        }
+
+        /* 2n-1 */
+        tbody tr:nth-child(2n){
+            background-color: lightgray;
+        }
+
+        /* odd */
+        tbody tr:nth-child(even){
+            background-color: lightgray;
         }
 
     </style>
@@ -36,129 +69,154 @@
             TFOOT
                 TR,TD,TH
      -->
+     
      <table>
+        <caption>Populção das Unidades Federativas Brasileiras</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width:150px;">População</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>41 262 199</td>
+                <td class="num">41 262 199</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td>19 597 330</td>
+                <td class="num">19.597.330</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>15 989 929</td>
+                <td class="num">15.989.929</td>
             </tr>
             <tr>
                 <td>Bahia</td>
-                <td>14 016 906</td>
+                <td class="num">14.016.906</td>
             </tr>
             <tr>
                 <td>Paraná</td>
-                <td>10 444 526</td>
+                <td class="num">10.444.526</td>
             </tr>
             <tr>
                 <td>Rio Grande do Sul</td>
-                <td>10 693 929</td>
+                <td class="num">10.693.929</td>
             </tr>
             <tr>
                 <td>Pernambuco</td>
-                <td>8 796 448</td>
+                <td class="num">8.796.448</td>
             </tr>
             <tr>
                 <td>Ceará</td>
-                <td>8 452 381</td>
+                <td class="num">8.452.381</td>
             </tr>
             <tr>
                 <td>Pará</td>
-                <td>7 581 051</td>
+                <td class="num">7.581.051</td>
             </tr>
             <tr>
                 <td>Santa Catarina</td>
-                <td>6 248 436</td>
+                <td class="num">6.248.436</td>
             </tr>
             <tr>
                 <td>Goiás</td>
-                <td>6 003 788</td>
+                <td class="num">6.003.788</td>
             </tr>
             <tr>
                 <td>Maranhão</td>
-                <td>6 574 789</td>
+                <td class="num">6.574.789</td>
             </tr>
             <tr>
                 <td>Paraíba</td>
-                <td>3 766 528</td>
+                <td class="num">3.766.528</td>
             </tr>
             <tr>
                 <td>Espírito Santo</td>
-                <td>3 514 952</td>
+                <td class="num">3.514.952</td>
             </tr>
             <tr>
                 <td> Amazonas</td>
-                <td>3 483 985</td>
+                <td class="num">3.483.985</td>
             </tr>
             <tr>
                 <td> Rio Grande do Norte</td>
-                <td>3 168 027</td>
+                <td class="num">3.168.027</td>
             </tr>
             <tr>
                 <td>Alagoas</td>
-                <td>3 120 494</td>
+                <td class="num">3.120.494</td>
             </tr>
             <tr>
                 <td>Piauí</td>
-                <td>3 118 360</td>
+                <td class="num">3.118.360</td>
             </tr>
             <tr>
                 <td>Mato Grosso</td>
-                <td>3 035 122</td>
+                <td class="num">3.035.122</td>
             </tr>
             <tr>
                 <td>Distrito Federal</td>
-                <td>2 570 160</td>
+                <td class="num">2.570.160</td>
             </tr>
             <tr>
                 <td>Mato Grosso do Sul</td>
-                <td>2 449 024</td>
+                <td class="num">2.449.024</td>
             </tr>
             <tr>
                 <td>Sergipe</td>
-                <td>2 068 017</td>
+                <td class="num">2.068.017</td>
             </tr>
             <tr>
                 <td>Rondônia</td>
-                <td>1 562 409</td>
+                <td class="num">1.562.409</td>
             </tr>
             <tr>
                 <td> Tocantins</td>
-                <td>1 383 445</td>
+                <td class="num">1.383.445</td>
             </tr>
             <tr>
                 <td>Acre</td>
-                <td>733 559</td>
+                <td class="num">733.559</td>
             </tr>
             <tr>
                 <td>Amapá</td>
-                <td>669 526</td>
+                <td class="num">669.526</td>
             </tr>
             <tr>
                 <td>Roraima</td>
-                <td>450 479</td>
+                <td class="num">450.479</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
-                <td>0000</td>
+                <th scope="row">Total de habitantes</th>
+                <td  class="num"><strong>213 317 639</strong></td>
             </tr>
         </tfoot>
      </table>
+
+     <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, quaerat! Alias explicabo voluptatibus, voluptate doloribus, omnis obcaecati dolorem ipsam asperiores dolor at atque harum accusantium ab, unde maiores debitis ex! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus quidem commodi quia sequi cupiditate atque voluptates quae sint molestias, pariatur possimus earum enim perferendis reiciendis nihil suscipit expedita eaque ex!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam illo, porro facere ex autem quaerat aliquid officiis? Eligendi fuga facere, rerum molestias, suscipit blanditiis error provident, perspiciatis in ratione omnis?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad repudiandae dolores alias voluptas voluptatibus natus, quam perferendis iusto obcaecati fugiat est nam, facere eius laboriosam nobis architecto libero velit deserunt.
+     </p>
+     <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, quaerat! Alias explicabo voluptatibus, voluptate doloribus, omnis obcaecati dolorem ipsam asperiores dolor at atque harum accusantium ab, unde maiores debitis ex! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus quidem commodi quia sequi cupiditate atque voluptates quae sint molestias, pariatur possimus earum enim perferendis reiciendis nihil suscipit expedita eaque ex!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam illo, porro facere ex autem quaerat aliquid officiis? Eligendi fuga facere, rerum molestias, suscipit blanditiis error provident, perspiciatis in ratione omnis?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad repudiandae dolores alias voluptas voluptatibus natus, quam perferendis iusto obcaecati fugiat est nam, facere eius laboriosam nobis architecto libero velit deserunt.
+     </p><p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, quaerat! Alias explicabo voluptatibus, voluptate doloribus, omnis obcaecati dolorem ipsam asperiores dolor at atque harum accusantium ab, unde maiores debitis ex! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus quidem commodi quia sequi cupiditate atque voluptates quae sint molestias, pariatur possimus earum enim perferendis reiciendis nihil suscipit expedita eaque ex!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam illo, porro facere ex autem quaerat aliquid officiis? Eligendi fuga facere, rerum molestias, suscipit blanditiis error provident, perspiciatis in ratione omnis?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad repudiandae dolores alias voluptas voluptatibus natus, quam perferendis iusto obcaecati fugiat est nam, facere eius laboriosam nobis architecto libero velit deserunt.
+     </p><p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, quaerat! Alias explicabo voluptatibus, voluptate doloribus, omnis obcaecati dolorem ipsam asperiores dolor at atque harum accusantium ab, unde maiores debitis ex! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus quidem commodi quia sequi cupiditate atque voluptates quae sint molestias, pariatur possimus earum enim perferendis reiciendis nihil suscipit expedita eaque ex!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam illo, porro facere ex autem quaerat aliquid officiis? Eligendi fuga facere, rerum molestias, suscipit blanditiis error provident, perspiciatis in ratione omnis?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad repudiandae dolores alias voluptas voluptatibus natus, quam perferendis iusto obcaecati fugiat est nam, facere eius laboriosam nobis architecto libero velit deserunt.
+     </p><p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, quaerat! Alias explicabo voluptatibus, voluptate doloribus, omnis obcaecati dolorem ipsam asperiores dolor at atque harum accusantium ab, unde maiores debitis ex! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus quidem commodi quia sequi cupiditate atque voluptates quae sint molestias, pariatur possimus earum enim perferendis reiciendis nihil suscipit expedita eaque ex!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam illo, porro facere ex autem quaerat aliquid officiis? Eligendi fuga facere, rerum molestias, suscipit blanditiis error provident, perspiciatis in ratione omnis?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad repudiandae dolores alias voluptas voluptatibus natus, quam perferendis iusto obcaecati fugiat est nam, facere eius laboriosam nobis architecto libero velit deserunt.
+     </p>
 </body>
 </html>

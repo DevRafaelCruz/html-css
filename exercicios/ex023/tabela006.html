@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Responsivas</title>
+    <style>
+        body{
+            background-color: #a8a8a8;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1{
+            text-shadow: 0px 2px 5px rgb(113, 113, 113); 
+            text-align: center;
+        }
+        div#container{
+            overflow-x: auto;
+        }
+        table{
+            background-color: white;
+            box-shadow: 2px 1px 10px 2px rgba(0, 0, 0, 0.419);
+            margin: auto;
+            border-collapse: collapse;
+            width: 500px;
+            position: relative;
+        }
+        caption{
+            background-color: lightgray;
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        td, th{
+            padding: 10px;
+            border: 1px solid black;
+        }
+        thead, tfoot{
+            background-color: #2a2a2a;
+            color: white;
+        }
+        .num{
+            text-align: right;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #2a2a2a;
+        }
+
+        /* 2n-1 */
+        tbody tr:nth-child(2n){
+            background-color: rgb(217, 217, 217);
+        }
+
+        /* odd */
+        /* tbody tr:nth-child(even){
+            background-color: lightgray;
+        } */
+
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repudiandae eius placeat cum id unde iusto voluptas recusandae iste aliquid pariatur ipsa quidem et velit sequi, possimus, nisi molestias quisquam.</p>
+
+    <div id="container">
+        <table>
+            <caption>Tabelas responsivas</caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lava Louças</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>06</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>06</td>
+                </tr>
+                <tr>
+                    <td>IPhone</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>06</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>06</td>
+                </tr>
+                <tr>
+                    <td>PS4</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>06</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>06</td>
+                </tr><tr>
+                    <td>TV 40"</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>06</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>06</td>
+                </tr><tr>
+                    <td>Galaxy J7</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>06</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>06</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
